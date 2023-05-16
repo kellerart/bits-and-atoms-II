@@ -22,8 +22,9 @@
    * Just some styling to make the card visible.
    * Feel free to change this!
    */
-  
+
   .card {
+    background-color: rgba(17, 25, 40, 0.5);
     border-style: dotted;
     border-color: black;
     border-radius: 14px;
@@ -42,13 +43,13 @@
   h1{
     font-family: 'Righteous', sans-serif;
     text-align: center;
-    color: black;
+    color: white;
     text-transform: uppercase;
     font-size: 32px;
   }
 
   p {
-    color: black;
+    color: white;
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 14px;
@@ -58,7 +59,7 @@
 
   .button {
     margin-left: 80px;
-    background: rgba(0, 212, 255);;
+    background: rgba(0, 212, 255,0.7);
     filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
     color: rgba(255,255,255,0.95);
     padding: 12px 24px;
