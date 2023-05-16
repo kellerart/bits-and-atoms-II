@@ -24,18 +24,18 @@
    */
   
   .card {
-    border-style: solid;
+    border-style: dotted;
     border-color: black;
     border-radius: 14px;
-    padding: 40px;
   }
 
   .image {
-    width: 100%;
-    height: 400px;
+    width: 80%;
+    height: 350px;
     background: url(Images/casa_corte.jpg);
     background-size: cover;
-    background-position: center;
+    margin-left: 30px;
+    margin-top: 40px;
     border-radius: 12px;
   }
   
@@ -44,14 +44,14 @@
     text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 32px;
   }
 
   p {
     color: black;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 2px;  
     text-transform: uppercase;
   }
