@@ -23,7 +23,13 @@
    * Feel free to change this!
    */
 
-  .card {
+   body {
+    background-image: url(Images/background.JPG);
+    background-size: cover;
+    background-position: center;
+  }
+  
+   .card {
     background-color: rgba(17, 25, 40, 0.5);
     border-style: dotted;
     border-color: black;
