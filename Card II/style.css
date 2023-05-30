@@ -1,7 +1,7 @@
 body {
     margin: 40px 0;
     font-family: "Raleway", sans-serif;
-    font-size: 32px;
+    font-size: 23px;
     font-weight: 500;
     background-color: #BCAAA4;
   }
@@ -14,9 +14,7 @@ body {
     text-align: center;
   }
   
-  p {
-    line-height: 1.5em;
-  }
+
   
   h1 + p,
   p + p {
