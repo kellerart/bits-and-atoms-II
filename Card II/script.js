@@ -20,14 +20,16 @@ Vue.component('card', {
     this.width = this.$refs.card.offsetWidth;
     this.height = this.$refs.card.offsetHeight;
   },
-  props: ['dataImage'],
-  data: () => ({
-    width: 0,
-    height: 0,
-    mouseX: 0,
-    mouseY: 0,
-    mouseLeaveDelay: null
-  }),
+  props: ['image'],
+  data() {
+    return {
+      width: 0,
+      height: 0,
+      mouseX: 0,
+      mouseY: 0,
+      mouseLeaveDelay: null
+    };
+  },
   computed: {
     mousePX() {
       return this.mouseX / this.width;
@@ -47,24 +49,24 @@ Vue.component('card', {
       const tY = this.mousePY * -40;
       return {
         transform: `translateX(${tX}px) translateY(${tY}px)`
-      }
+      };
     },
     cardBgImage() {
       return {
-        backgroundImage: `url(${this.dataImage})`
-      }
+        backgroundImage: `url(image/ticino.jpg)`
+      };
     }
   },
   methods: {
     handleMouseMove(e) {
-      this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width/2;
-      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height/2;
+      this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
+      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
     },
     handleMouseEnter() {
       clearTimeout(this.mouseLeaveDelay);
     },
     handleMouseLeave() {
-      this.mouseLeaveDelay = setTimeout(()=>{
+      this.mouseLeaveDelay = setTimeout(() => {
         this.mouseX = 0;
         this.mouseY = 0;
       }, 1000);
