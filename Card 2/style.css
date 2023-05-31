@@ -6,14 +6,14 @@ body {
     background-color: #252423;
   }
   
-  .title {
+/* .title {
     font-family: "Raleway", sans-serif;
     font-size: 48px;
     font-weight: 700;
-    color: #5D4037;
+    color: #e83904;
     text-align: center;
   }
-  
+  */
 
   
   h1 + p,
@@ -25,9 +25,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
   }
   
+  /* These wrapper thing's were found somewhere*/
   .card-wrap {
     margin: 10px;
     transform: perspective(800px);
@@ -61,7 +62,7 @@ body {
   
   .card-wrap:hover .card {
     transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 2s cubic-bezier(0.23, 1, 0.32, 1);
-    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgba(255, 255, 255, 1) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+    box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, rgb(85, 81, 81) 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
   }
   
   .card {
@@ -71,8 +72,7 @@ body {
     height: 540px;
     background-color: #333;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.66) 0 30px;
+    border-radius: 5px;
   }
   
   .card-bg {
@@ -94,7 +94,7 @@ body {
     width: 100%;
     padding: 20px;
     background-color: transparent; 
-    color: #fff;
+    color: #ffffff;
     transform: translateY(100%);
     transition: 0.6s cubic-bezier(0.23, 1, 0);
     background: none;
